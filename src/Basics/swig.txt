@@ -1,0 +1,8 @@
+basics.i
+Gconstants.i
+Gutils.i
+IsotopeData.i	02/may/2017  	x  	ok
+Isotope.i	02/may/2017	x	ok
+ParamSet.i
+SinglePar.i
+StringCut.i
