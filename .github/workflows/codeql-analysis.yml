@@ -65,3 +65,9 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
+      
+    - name: Upload extractor specific logs
+      uses: actions/upload-artifact@v2
+      with:
+        name: extracting-pimples-${{ matrix.language }}-db
+        path: $RUNNER_TEMP\codeql_databases\cpp\log
