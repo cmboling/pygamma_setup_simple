@@ -69,4 +69,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: extracting-pimples-${{ matrix.language }}-db
-        path: $RUNNER_TEMP\codeql_databases\cpp\log
+        path: ${{ CODEQL_EXTRACTOR_CPP_LOG_DIR }}
