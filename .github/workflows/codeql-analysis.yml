@@ -66,7 +66,8 @@ jobs:
       uses: github/codeql-action/analyze@v1
       
     - name: Upload extractor specific logs
+      if: ${{ always() }}
       uses: actions/upload-artifact@v2
       with:
-        name: extracting-pimples-${{ matrix.language }}-db
-        path: ${{ CODEQL_EXTRACTOR_CPP_LOG_DIR }}
+        name: display_service-${{ matrix.language }}-db
+        path: $RUNNER_TEMP\codeql_databases\cpp\log
