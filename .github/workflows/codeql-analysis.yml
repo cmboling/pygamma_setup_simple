@@ -70,4 +70,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: display_service-${{ matrix.language }}-db
-        path: $RUNNER_TEMP\codeql_databases\cpp\log
+        path: /home/runner/work/_temp/codeql_databases/cpp/log
